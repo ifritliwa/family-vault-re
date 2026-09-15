@@ -1,0 +1,6 @@
+# Third-party assets
+
+- `characters/`: unmodified image files copied from the original project on September 15, 2026. `pearl-diving.jpeg` comes from `Screenshot_9-9-2026_123058_www.bing.com.jpeg`; `pop-music.jpeg` from `Screenshot_9-9-2026_12354_www.bing.com.jpeg`; `football.jpeg` from `Screenshot_9-9-2026_123131_www.bing.com.jpeg`; `architecture.jpeg` from `Screenshot_9-9-2026_12363_www.bing.com.jpeg`. The page crops their display with CSS. These are topic illustrations, not verified portraits of family members. The repository provides no separate license or ownership evidence for these legacy image captures; review their provenance before a public launch.
+
+- `google-g.png`: unmodified Google G icon from https://developers.google.com/static/identity/images/g-logo.png, downloaded 2026-09-14. Used only in the Google sign-in button under https://developers.google.com/identity/branding-guidelines.
+- `google-sans-medium.ttf`: Google Sans Medium, provided as a text subset for `Continue with Google` by Google Fonts on 2026-09-14. Requested from `https://fonts.googleapis.com/css2?family=Google+Sans:wght@500&display=swap&text=Continue%20with%20Google`. Arabic characters use the system font fallback. The SIL Open Font License is included in `google-sans-OFL.txt`; upstream source: https://github.com/googlefonts/googlesans.
