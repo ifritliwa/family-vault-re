@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="oauth.css">
   <link rel="stylesheet" href="password.css">
   <link rel="preconnect" href="https://challenges.cloudflare.com">
-  <script type="module" src="assets/app.js?v=26a22b530f95252b"></script>
+  <script type="module" src="assets/app.js?v=9fa6f26d09cbaffc"></script>
 </head>
 <body>
   <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -76,7 +76,7 @@
           <div id="code-recipient" class="code-recipient" hidden><strong id="delivery-email" dir="ltr"></strong><button id="change-email" class="text-button" type="button" data-i18n="changeEmail">تغيير البريد</button></div>
           <p id="form-alert" class="alert" role="alert" hidden></p>
           <p id="form-notice" class="notice" role="status" hidden></p>
-          <div id="social-signin" class="social-signin">
+          <div id="social-signin" class="social-signin" hidden>
             <button id="oauth-google" class="oauth-button google-button" type="button" disabled>
               <img class="provider-logo" src="assets/google-g.png" width="20" height="20" alt="">
               <span data-i18n="googleSignin">المتابعة باستخدام Google</span><small id="oauth-google-status" data-i18n="providerSoon">قريبًا</small>
@@ -87,6 +87,7 @@
             </button>
             <div class="auth-divider"><span data-i18n="emailAlternative">أو تابع بالبريد الإلكتروني</span></div>
           </div>
+          <button id="passkey-signin" class="secondary-button" type="button" hidden><svg class="icon"><use href="#i-key"/></svg><span data-i18n="passkeySignin">الدخول بمفتاح مرور</span></button>
           <form id="auth-form" novalidate method="post">
             <div id="details-fields">
               <div class="field"><label for="email" data-i18n="email">البريد الإلكتروني</label><input id="email" name="email" type="email" autocomplete="username" inputmode="email" dir="ltr" maxlength="254" placeholder="you@example.com" spellcheck="false" autocapitalize="none" aria-describedby="email-help email-error"><span id="email-help" class="field-help" data-i18n="emailHelp">لتأكيد بريدك ورسائل أمان الحساب.</span><span id="email-error" class="field-error" hidden></span></div>
@@ -110,13 +111,13 @@
               <p id="resend-check-note" class="field-help" data-i18n="resendCheck" hidden>التحقق الأمني أدناه مطلوب عند إرسال رمز جديد.</p>
               <div id="turnstile-widget" dir="ltr"></div>
               <div class="captcha-status-row"><span id="captcha-status" class="field-help" role="status">يبدأ التحقق الأمني عند إرسال هذا النموذج.</span><button id="retry-captcha" class="text-button" type="button" data-i18n="retry" hidden>إعادة المحاولة</button><button id="cancel-captcha" class="text-button" type="button" data-i18n="cancelCheck" hidden>إلغاء التحقق</button></div>
-              <p id="captcha-help" class="field-help" data-i18n="captchaHelp" hidden>إذا استمر التعذّر، جرّب الصفحة في Chrome أو Edge. يمكنك أيضًا الدخول باستخدام Google.</p>
+              <p id="captcha-help" class="field-help" data-i18n="captchaHelp" hidden>إذا استمر التعذّر، جرّب الصفحة في Chrome أو Edge. </p>
             </div>
             <button id="submit-button" class="primary-button" type="submit" disabled><span id="submit-label">إنشاء حسابي</span><svg class="icon direction-arrow"><use href="#i-arrow"/></svg><span class="spinner" aria-hidden="true"></span></button>
             <button id="email-password-code" class="text-button" type="button" data-i18n="emailSetupRequest">إعداد كلمة مرور البريد أو استعادتها برمز</button>
           </form>
           <div id="account-switch" class="account-switch"><span id="mode-prompt">لديك حساب بالفعل؟</span><button id="mode-button" class="text-button" type="button">تسجيل الدخول</button></div>
-          <button id="passkey-signin" class="secondary-button" type="button" hidden><svg class="icon"><use href="#i-key"/></svg><span data-i18n="passkeySignin">الدخول بمفتاح مرور</span></button>
+          
           <p id="privacy-note" class="privacy-note"><svg class="icon"><use href="#i-shield"/></svg><span data-i18n="privacy">نستخدم بريدك لتسجيل الدخول وأمان الحساب. لن نرسل رسائل تسويقية من هذه الصفحة.</span></p>
         </div>
         <section id="success-screen" hidden aria-labelledby="success-title">
