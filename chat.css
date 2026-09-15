@@ -1,0 +1,8 @@
+.chat-controls{display:flex;flex-wrap:wrap;gap:12px;align-items:center;padding:14px 22px;border-bottom:1px solid #dfe4dc;background:#f8f9f4}
+.chat-controls label{font-size:12px;color:#5b6c61}.chat-controls select{font:inherit;font-size:13px;padding:9px 28px 9px 10px;border:1px solid #cbd5c8;border-radius:9px;background:#fff;color:#254d39;max-width:100%}
+.chat-controls button{margin-inline-start:auto}.chat-memory-state{font-size:12px;color:#617364}.chat-availability{margin:0;padding:0 22px 10px;background:#f8f9f4;font-size:13px;color:#975435}
+.memory-dialog{width:min(560px,calc(100vw - 32px));max-height:85vh;overflow:auto;border:1px solid #cbd5c8;border-radius:18px;padding:26px;color:#254d39;background:#fafaf5;box-shadow:0 20px 80px #153c3326}
+.memory-dialog::backdrop{background:#173c3355}.memory-dialog h2{margin:0 0 10px}.memory-dialog p{font-size:13px;line-height:1.65;color:#657368}.memory-dialog label{display:block;font-size:14px;margin:16px 0 8px}.memory-dialog label.memory-toggle{display:flex;align-items:center;gap:10px}
+.memory-dialog textarea{box-sizing:border-box;width:100%;min-height:120px;padding:12px;border:1px solid #bcccbd;border-radius:10px;font:inherit;line-height:1.6;background:#fff;color:inherit;resize:vertical}
+.memory-dialog pre{font:inherit;font-size:13px;white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.7;border-radius:10px;background:#eef2e9;padding:14px}.memory-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}.memory-actions .button{cursor:pointer}.memory-forget{color:#9c4838}.memory-status{min-height:1.5em}
+@media(max-width:600px){.chat-controls{padding:12px}.chat-controls select{max-width:210px}.chat-controls button{margin-inline-start:0}.memory-dialog{padding:20px}}
